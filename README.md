@@ -1,7 +1,7 @@
 
 <img src="https://avatars0.githubusercontent.com/u/44243093?s=400&v=4">
 
-# Trogenators-Scounting-App
+# trojanators-Scounting-App
 
 ### Our Scouting App allows your First Robotics Competition Team to keep track of Scouting Data in an Organized, Simplistic Way.
 
