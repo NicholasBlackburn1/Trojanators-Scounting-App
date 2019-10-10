@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Constants from 'expo-constants';
 
-export default class Mainwindow extends Component{
+export default class Splash extends Component{
 
     
     }
