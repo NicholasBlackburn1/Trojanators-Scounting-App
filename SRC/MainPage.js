@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
-import MaterialHeader2 from "./components/MaterialHeader2";
+import MaterialHeader2 from "./components/MainHeader";
 import { Container } from "native-base";
 
 

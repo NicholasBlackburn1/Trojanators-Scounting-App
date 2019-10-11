@@ -2,39 +2,29 @@ import React, { Component } from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/MaterialCommunityIcons";
 
-
-
-export default class MaterialHeader2 extends Component {
+export default class PageHeaderTeam extends Component {
   render() {
-  
-    
     return (
-     
       <View style={[styles.container, this.props.style]}>
-        
         <View
           style={{
+            height: 52,
             flexDirection: "row",
             marginLeft: 5,
-            marginTop: 5,
-            marginBottom: 5
+            marginTop: 5
           }}
         >
-          <Sidebar
-            sidebar={<b>Sidebar content</b>}
-            open={this.state.sidebarOpen}
-            onSetOpen={this.onSetSidebarOpen}
-            styles={{ sidebar: { background: "white" } }}
-          >
-            </Sidebar>
           <TouchableOpacity style={styles.leftIconButton}>
-
-            {/*responds to your click on the Header title*/}
             <MaterialCommunityIconsIcon name="menu" style={styles.leftIcon} />
           </TouchableOpacity>
           <View style={styles.textWrapper}>
             <Text numberOfLines={1} style={styles.title}>
-              Scouts
+              Team name
+            </Text>
+          </View>
+          <View style={styles.rect}>
+            <Text numberOfLines={1} style={styles.text2}>
+              Rank
             </Text>
           </View>
         </View>
@@ -44,25 +34,12 @@ export default class MaterialHeader2 extends Component {
             flexDirection: "row"
           }}
         />
-        <View style={styles.rightIconsWrapper}>
-          <TouchableOpacity style={styles.iconButton}>
-            <MaterialCommunityIconsIcon
-              name="magnify"
-              style={styles.rightIcon1}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.iconButton}>
-            <MaterialCommunityIconsIcon
-              name="dots-vertical"
-              style={styles.rightIcon2}
-            />
-          </TouchableOpacity>
-          <SideMenu
-            isOpen={this.state.isOpen}
-            menu={MenuComponent}>
-            <App toggleSideMenu={this.toggleSideMenu.bind(this)} />
-          </SideMenu>
-        </View>
+        <TouchableOpacity style={styles.rightIconButton}>
+          <MaterialCommunityIconsIcon
+            name="dots-vertical"
+            style={styles.rightIcon}
+          />
+        </TouchableOpacity>
       </View>
     );
   }
@@ -70,7 +47,7 @@ export default class MaterialHeader2 extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#a30505",
+    backgroundColor: "rgba(171,35,1,1)",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -94,9 +71,8 @@ const styles = StyleSheet.create({
     fontSize: 24
   },
   textWrapper: {
-    alignSelf: "flex-end",
-    marginLeft: 21,
-    marginBottom: 14
+    marginLeft: 14,
+    marginTop: 28
   },
   title: {
     backgroundColor: "transparent",
@@ -104,22 +80,25 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 18
   },
-  rightIconsWrapper: {
-    flexDirection: "row",
+  rect: {
+    width: 40,
+    height: 23,
+    marginLeft: 107,
+    marginTop: 29
+  },
+  text2: {
+    backgroundColor: "transparent",
+    color: "#FFFFFF",
+    fontSize: 18,
+    lineHeight: 18
+  },
+  rightIconButton: {
     alignItems: "center",
+    padding: 11,
     marginRight: 5,
     marginTop: 5
   },
-  iconButton: {
-    padding: 11
-  },
-  rightIcon1: {
-    backgroundColor: "transparent",
-    color: "#FFFFFF",
-    fontFamily: "roboto-regular",
-    fontSize: 24
-  },
-  rightIcon2: {
+  rightIcon: {
     backgroundColor: "transparent",
     color: "#FFFFFF",
     fontFamily: "roboto-regular",
