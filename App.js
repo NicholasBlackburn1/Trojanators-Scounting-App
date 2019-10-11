@@ -1,11 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { MainPage } from "MainPage";
+import MainPage  from "./SRC/MainPage";
 
-export default function App() {
+
+export default function App()
+{
   return (
+    
     <View style={styles.container}>
-      
+
      <MainPage/>
     </View>
   );
