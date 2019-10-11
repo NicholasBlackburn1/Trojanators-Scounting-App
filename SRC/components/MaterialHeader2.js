@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/MaterialCommunityIcons";
 
+
+
 export default class MaterialHeader2 extends Component {
   render() {
+  
+    
     return (
+     
       <View style={[styles.container, this.props.style]}>
+        
         <View
           style={{
             flexDirection: "row",
@@ -14,7 +20,16 @@ export default class MaterialHeader2 extends Component {
             marginBottom: 5
           }}
         >
+          <Sidebar
+            sidebar={<b>Sidebar content</b>}
+            open={this.state.sidebarOpen}
+            onSetOpen={this.onSetSidebarOpen}
+            styles={{ sidebar: { background: "white" } }}
+          >
+            </Sidebar>
           <TouchableOpacity style={styles.leftIconButton}>
+
+            {/*responds to your click on the Header title*/}
             <MaterialCommunityIconsIcon name="menu" style={styles.leftIcon} />
           </TouchableOpacity>
           <View style={styles.textWrapper}>
@@ -42,6 +57,11 @@ export default class MaterialHeader2 extends Component {
               style={styles.rightIcon2}
             />
           </TouchableOpacity>
+          <SideMenu
+            isOpen={this.state.isOpen}
+            menu={MenuComponent}>
+            <App toggleSideMenu={this.toggleSideMenu.bind(this)} />
+          </SideMenu>
         </View>
       </View>
     );
@@ -50,7 +70,7 @@ export default class MaterialHeader2 extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#3F51B5",
+    backgroundColor: "#a30505",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
