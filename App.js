@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MainPage  from "./SRC/MainPage";
+import Teams_info from "./SRC/Teams_info";
 
 
 export default function App()
@@ -8,8 +8,8 @@ export default function App()
   return (
     
     <View style={styles.container}>
-
-     <MainPage/>
+      
+     <Teams_info/>
     </View>
   );
 }

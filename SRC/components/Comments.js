@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   inputStyle: {
     flex: 1,
-    color: "#000",
+    color: "#ffffff",
     alignSelf: "stretch",
     paddingTop: 14,
     paddingRight: 16,

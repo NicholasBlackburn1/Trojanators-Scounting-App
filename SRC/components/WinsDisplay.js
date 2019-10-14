@@ -16,15 +16,15 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(230,230,230)",
     alignItems: "center",
     justifyContent: "center",
-    paddingRight: 12,
-    paddingLeft: 12,
+    paddingRight: 13,
+    paddingLeft: 13,
     borderRadius: 50
   },
   chipText: {
-    width: 58,
-    height: 28,
+    width: 59,
+    height: 24,
     color: "rgba(0,0,0,0.87)",
-    fontSize: 28,
+    fontSize: 20,
     fontFamily: "comic-sans-ms-regular"
   }
 });

@@ -11,7 +11,6 @@ export default class MainWindow extends Component {
             <View style={styles.container}>
                 <View style={styles.rect}>
                     <MaterialHeader2 style={styles.materialHeader2} />
-                    
                 </View>
             </View>
         );

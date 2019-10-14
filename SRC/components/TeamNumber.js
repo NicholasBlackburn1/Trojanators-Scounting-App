@@ -6,7 +6,7 @@ export default class TeamNumber extends Component {
     return (
       <View style={[styles.container, this.props.style]}>
         <Image
-          source={require("../assets/images/cardImage1.png")}
+          
           style={styles.leftImage}
         />
         <Text style={styles.chipText}>Team Number</Text>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   chipText: {
     color: "rgba(0,0,0,0.87)",
     paddingRight: 12,
-    paddingLeft: 8,
+    paddingLeft: 12,
     fontSize: 13
   }
 });

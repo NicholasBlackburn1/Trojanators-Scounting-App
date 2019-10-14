@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
     borderRadius: 50
   },
   chipText: {
-    width: 95,
+    width: 96,
     height: 28,
     color: "rgba(0,0,0,0.87)",
-    fontSize: 28,
+    fontSize: 22,
     fontFamily: "comic-sans-ms-regular"
   }
 });

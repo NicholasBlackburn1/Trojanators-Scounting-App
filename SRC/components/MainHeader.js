@@ -24,7 +24,7 @@ export default class MaterialHeader2 extends Component {
           <TouchableOpacity style={styles.leftIconButton}>
 
             {/*responds to your click on the Header title*/}
-            <MaterialCommunityIconsIcon name="menu" style={styles.leftIcon} onPress={=> }/>
+            <MaterialCommunityIconsIcon name="menu" style={styles.leftIcon} />
           </TouchableOpacity>
           <View style={styles.textWrapper}>
             <Text numberOfLines={1} style={styles.title}>

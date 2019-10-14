@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
-import TeamNumber from "../components/TeamNumber";
-import WinsDisplay from "../components/WinsDisplay";
-import LossesDisplay from "../components/LossesDisplay";
-import Alliances from "../components/Alliances";
-import Comments from "../components/Comments";
-import PageHeaderTeam from "../components/PageHeaderTeam";
+import TeamNumber from "./components/TeamNumber";
+import WinsDisplay from "./components/WinsDisplay";
+import LossesDisplay from "./components/LossesDisplay";
+import Alliances from "./components/Alliances";
+import Comments from "./components/Comments";
+import PageHeaderTeam from "./components/PageHeaderTeam";
 
-export default class Team_info extends Component {
+export default class Teams_info extends Component {
     render() {
         return (
             <View style={styles.container}>
