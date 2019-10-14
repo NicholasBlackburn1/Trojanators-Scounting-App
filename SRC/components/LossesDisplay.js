@@ -3,12 +3,7 @@ import { StyleSheet, View, Text } from "react-native";
 import { ThemeConsumer } from "react-native-elements";
 
 export default class LossesDisplay extends Component {
-
-  updateText = {
-   
- }
-  
-  
+    
   render() {
     return (
       <View style={[styles.container, this.props.style]}>
