@@ -1,15 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Teams_info from "./SRC/Teams_info";
-
+import Mainmenu from "./SRC/MainPage";
+import Data_update from "./SRC/components/Data_update";
 
 export default function App()
 {
   return (
     
     <View style={styles.container}>
+      <Mainmenu>
+        
+      </Mainmenu>
+    
       
-     <Teams_info/>
     </View>
   );
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/MaterialCommunityIcons";
+import Data_Update from "./Data_update";
 
 
 export default class MaterialHeader2 extends Component {
@@ -38,16 +39,16 @@ export default class MaterialHeader2 extends Component {
           }}
         />
         <View style={styles.rightIconsWrapper}>
-          <TouchableOpacity style={styles.iconButton}>
+          <TouchableOpacity style={styles.iconButton} />
             <MaterialCommunityIconsIcon
               name="magnify"
-              style={styles.rightIcon1}
-            />
-          </TouchableOpacity>
+              style={styles.rightIcon1}/>
+         
           <TouchableOpacity style={styles.iconButton}>
             <MaterialCommunityIconsIcon
               name="dots-vertical"
               style={styles.rightIcon2}
+              onPress={() => Alert.alert(Data_Update.fetchAndLog())}
             />
           </TouchableOpacity>
         </View>
