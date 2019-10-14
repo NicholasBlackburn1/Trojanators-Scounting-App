@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/MaterialCommunityIcons";
-import Data_Update from "./Data_update";
+import TeamData from "./TeamData";
 
 
 export default class MaterialHeader2 extends Component {
@@ -47,9 +47,9 @@ export default class MaterialHeader2 extends Component {
           <TouchableOpacity style={styles.iconButton}>
             <MaterialCommunityIconsIcon
               name="dots-vertical"
-              style={styles.rightIcon2}
-              onPress={() => Alert.alert(Data_Update.fetchAndLog())}
-            />
+              onLongPress ={()=> TeamData.teams()}
+              style={styles.rightIcon2} />
+              
           </TouchableOpacity>
         </View>
       </View>
